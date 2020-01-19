@@ -22,6 +22,6 @@ function LlamarWazap() {
 ezpotify.addEventListener('click', LlamarEspotify);
 
 function LlamarEspotify() {
-    document.getElementById("iFrame").src = "../espotify-html/index.html";
+    document.getElementById("iFrame").src = "../zpotify-html/index.html";
     titulo.innerHTML = "Espotify";
 }

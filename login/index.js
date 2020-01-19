@@ -1,24 +1,29 @@
-console.log('Bienvenido');
+console.log(' Bienvenido ')
 
-const boton = window.document.querySelector('#boton');
-boton.addEventListener('click', iniciarSesion);
+const boton = window.document.querySelector('#btnLogin');
+boton.addEventListener('click', mostrarDatos);
 
-function iniciarSesion() {
-    const input1 = window.document.querySelector('#email');
-    const email1 = input1.value;
-    const input2 = window.document.querySelector('#password');
-    const password2 = input2.value;
+function mostrarDatos() {
+    const opt1 = window.document.querySelector('#InpUsername');
+    const opt2 = window.document.querySelector('#InpPassword');
 
-    if (email1 === 'ejemplo@gmail.com' && password2 === '123456') {
+    const Value1 = opt1.value;
+    const Value2 = opt2.value;
 
-        console.log('Iniciando Sesion');
-        console.log('Espere Porfavor...');
+    opt1.value = '';
+    opt2.value = "";
+    opt1.focus();
 
+    
+    if (Value1 === '' || Value2 === '') {
+        console.log('Ingrese Datos');
     } else {
-
-        console.log('Email o Contraseña incorrectos');
-        console.log('Intentelo denuevo porfavor');
-
+        if (Value1 === 'ejemplo@gmail.com' && Value2 === '123456') {
+            console.log('Accediendo, porfavor espere...');
+            document.getElementById("msgerror").innerHTML = " ";  
+        }else{
+            console.log( 'Permiso denegado- Intentelo nuevamente ');
+            document.getElementById("msgerror").innerHTML = " Usuario y/o Contraseña incorrecta ";
+        }
     }
-
 }

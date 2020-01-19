@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    display: block;
+}
+
+.caja{
+    position: absolute;
+    width: 605px;
+    height: 946px;
+    left: 425px;
+    top: 83px;
+    padding-bottom: 19px;
+    padding-left: 28px;
+    padding-right: 20px;
+
+    background: #F2FCFF;
+    border: 2px solid #C3F1FF;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.caja-principal{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.cajita{
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    background: #5AD2AE;
+    border: 1px solid #29CEFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+p{
+    color: #FFFFFF;
+    margin: 8px;
+}
